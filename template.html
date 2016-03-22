@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your site description." />
+    <title>Your page title</title>
+
+    <link href="responsive.min.css" rel="stylesheet" />
+</head>
+<body>
+	<a class="ov1" href="#" data-modal-target="#overlay1">Launch internal overlay</a>
+	<div id="overlay1" class="hidden">
+	    <p>
+	        Lorem ipsum dolor sit amet...
+	    </p>
+	</div>
+	<a class="ov2" data-modal-target="#overlay2">Launch internal overlay</a>
+	<div id="overlay2" class="hidden">
+	    <h2>Step One</h2>
+	    <p>
+	        Lorem ipsum dolor sit amet...
+	    </p>
+		<p><a class="ov3" data-modal-target="#overlay3">Go to Step Two</a></p>
+	</div>
+    <div id="overlay3" class="hidden">
+	    <h2>Step Two</h2>
+	    <p>
+	        Lorem ipsum dolor sit amet...
+	    </p>
+	        <p><a class="ov2" data-modal-target="#overlay2">Back to Step One</a></p>
+	</div>
+
+    <script src="vendor/jquery-2.1.4.min.js"></script>
+    <script src="responsive.js"></script>
+</body>
+</html>
